@@ -1,0 +1,12 @@
+// GOOGLE FONTS
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Roboto:wght@100;300;400;500;700;900&display=swap");
+
+//Layout
+@import "layout/variables";
+@import "layout/breakpoints";
+@import "layout/default";
+
+// Pages
+@import "pages/home";
+@import "pages/contact";
+@import "pages/products";
