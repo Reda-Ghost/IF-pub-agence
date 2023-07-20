@@ -119,13 +119,13 @@ a {
   position: absolute;
 }
 .home::before {
-  content: url("/svg/home/red_triangle.svg");
+  content: url("../svg/home/red_triangle.svg");
   right: 10%;
   -webkit-filter: drop-shadow(-12px 4px 50px rgba(0, 0, 0, 0.25));
           filter: drop-shadow(-12px 4px 50px rgba(0, 0, 0, 0.25));
 }
 .home::after {
-  content: url("/svg/home/blue_triangle.svg");
+  content: url("../svg/home/blue_triangle.svg");
   bottom: -5px;
   left: 10%;
   -webkit-filter: drop-shadow(12px 4px 50px rgba(0, 0, 0, 0.25));
