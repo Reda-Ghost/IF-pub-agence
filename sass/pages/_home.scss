@@ -7,7 +7,7 @@
   height: $navHeight;
   display: flex;
   align-items: center;
-  box-shadow: 0px 0px 10px 0px rgba(166, 209, 237, 0.3);
+  box-shadow: 0px 0px 10px 0px rgba(166, 209, 237, 0.8);
   .navbar {
     display: flex;
     align-items: center;
@@ -23,7 +23,7 @@
       gap: 40px;
     }
     &__link {
-      font-family: $paragraphFont;
+      font-family: $Roboto;
       font-size: 1.25rem; // 20px
       text-transform: uppercase;
       font-weight: 500;
@@ -67,7 +67,7 @@
   }
   &__title {
     text-transform: uppercase;
-    font-family: $mainFont;
+    font-family: $Poppins;
     font-size: 5rem;
     font-weight: 700;
     letter-spacing: 5.2px;
