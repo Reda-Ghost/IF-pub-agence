@@ -690,3 +690,77 @@ a {
 .works__flex .work:last-of-type:hover .work__img {
   fill: #06a7e0;
 }
+
+.projects .projects__grid {
+  margin-top: 75px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: -webkit-max-content;
+  grid-template-rows: max-content;
+  gap: 5px;
+}
+.projects .projects__grid .project {
+  position: relative;
+  background-size: cover;
+  background-position: center center;
+  overflow: hidden;
+}
+.projects .projects__grid .project__overlay {
+  position: absolute;
+  top: -120%;
+  left: 0;
+  background-color: rgba(17, 46, 65, 0.7);
+  height: 100%;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-inline: 50px;
+  -webkit-transition: 250ms ease-in-out;
+  transition: 250ms ease-in-out;
+}
+.projects .projects__grid .project__overlay h4 {
+  color: #fff;
+  font-family: "Roboto", sans-serif;
+  font-size: 42px;
+  font-weight: 700;
+  letter-spacing: 2.5px;
+  text-transform: uppercase;
+  text-align: center;
+  line-height: normal;
+}
+.projects .projects__grid .project:hover .project__overlay {
+  top: 0;
+}
+.projects .projects__grid .project:first-of-type {
+  background-image: url(../img/projects/projectOne.png);
+  height: 490px;
+}
+.projects .projects__grid .project:last-of-type {
+  background-image: url(../img/projects/projectSix.png);
+  height: 730px;
+  margin-top: -255px;
+}
+.projects .projects__grid .project:nth-of-type(2) {
+  background-image: url(../img/projects/projectTwo.png);
+  height: 720px;
+}
+.projects .projects__grid .project:nth-of-type(3) {
+  background-image: url(../img/projects/projectThree.png);
+  height: 700px;
+  margin-top: -230px;
+}
+.projects .projects__grid .project:nth-of-type(4) {
+  background-image: url(../img/projects/projectFour.png);
+  height: 215px;
+}
+.projects .projects__grid .project:nth-of-type(5) {
+  background-image: url(../img/projects/projectFive.png);
+  height: 475px;
+}
