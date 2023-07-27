@@ -95,39 +95,39 @@
       bottom: 0;
     }
   }
-  .circle {
-    position: absolute;
-    &_1 {
-      left: 50%;
-      top: 180px;
-      animation: circleAnimation1 6s ease-in-out infinite both alternate-reverse;
-    }
-    &_2 {
-      left: 8%;
-      top: 180px;
-      animation: circleAnimation2 3s ease-in-out infinite both alternate-reverse;
-      animation-delay: 4s;
-    }
-    &_3 {
-      left: 55%;
-      top: 780px;
-      animation: circleAnimation3 8s ease-in-out infinite both alternate;
-    }
-    &_4 {
-      right: 12%;
-      top: 580px;
-      animation: circleAnimation4 5s ease-in-out infinite both alternate;
-    }
-    &_5 {
-      left: 12%;
-      top: 750px;
-      animation: circleAnimation5 5s ease-in-out infinite both alternate;
-    }
-    &_6 {
-      top: 350px;
-      left: 22%;
-      animation: circleAnimation6 4s ease-in-out infinite both alternate;
-    }
+}
+
+.circle {
+  position: absolute;
+  &_1 {
+    left: 50%;
+    top: 180px;
+    animation: circleAnimation1 6s ease-in-out infinite both alternate-reverse;
+  }
+  &_2 {
+    left: 8%;
+    top: 180px;
+    animation: circleAnimation2 3s ease-in-out infinite both alternate-reverse;
+  }
+  &_3 {
+    left: 55%;
+    top: 780px;
+    animation: circleAnimation3 8s ease-in-out infinite both alternate;
+  }
+  &_4 {
+    right: 12%;
+    top: 580px;
+    animation: circleAnimation4 5s ease-in-out infinite both alternate;
+  }
+  &_5 {
+    left: 12%;
+    top: 750px;
+    animation: circleAnimation5 5s ease-in-out infinite both alternate;
+  }
+  &_6 {
+    top: 350px;
+    left: 22%;
+    animation: circleAnimation6 4s ease-in-out infinite both alternate;
   }
 }
 
