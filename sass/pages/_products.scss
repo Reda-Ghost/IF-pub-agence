@@ -7,6 +7,14 @@
     gap: 20px;
     position: relative;
     z-index: 2;
+    @include Medium {
+      grid-template-columns: repeat(2, 1fr);
+      justify-content: center;
+    }
+    @include Large {
+      grid-template-columns: repeat(2, 1fr);
+      justify-content: center;
+    }
     .product {
       position: relative;
       padding-inline: 35px;
@@ -20,6 +28,7 @@
         top: 0;
         z-index: -1;
         width: 100%;
+        height: 100%;
       }
       .product__title {
         color: black;
@@ -28,6 +37,9 @@
         font-weight: 500;
         line-height: normal;
         margin-block: 0 20px;
+        @include X-Large {
+          font-size: 26px;
+        }
       }
       .product__btn {
         border-radius: 15px;
@@ -104,7 +116,7 @@
     border-radius: 25px;
     box-shadow: 0px 5px 30px 0px rgba(0, 0, 0, 0.35);
     transition: 150ms linear;
-    margin:  50px auto 0;
+    margin: 50px auto 0;
     &:hover {
       background-color: $redColor;
     }

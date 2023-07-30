@@ -14,19 +14,35 @@
     gap: 380px;
     height: 100%;
     justify-content: center;
+    align-items: center;
+    @include Medium {
+      justify-content: space-between;
+    }
     &__logo {
       width: 110px;
+      @include Medium {
+        width: 100px;
+      }
+      @include Large {
+        width: 80px;
+      }
     }
     &__links {
       display: flex;
       align-items: center;
       gap: 40px;
+      @include Medium {
+        display: none;
+      }
     }
     &__link {
       font-family: $Roboto;
       font-size: 1.25rem; // 20px
       text-transform: uppercase;
       font-weight: 500;
+      @include Large {
+        font-size: 18px;
+      }
       position: relative;
       &:hover::after {
         width: 65%;
@@ -43,6 +59,23 @@
         transition: 150ms ease-in-out;
       }
     }
+    &__btn {
+      width: 40px;
+      cursor: pointer;
+      display: none;
+      @include Small {
+        display: block;
+      }
+      @include Medium {
+        display: block;
+      }
+      @include Large {
+        display: none;
+      }
+      @include X-Large {
+        display: none;
+      }
+    }
   }
 }
 
@@ -50,9 +83,20 @@
   height: 100vh;
   padding-top: $navHeight;
   position: relative;
+  overflow: hidden;
   &::before,
   &::after {
     position: absolute;
+    width: 585px;
+    height: 214px;
+    @include Medium {
+      width: 350px;
+      height: auto;
+    }
+    @include Large {
+      width: 500px;
+      height: auto;
+    }
   }
   &::before {
     content: url("../svg/home/red_triangle.svg");
@@ -76,6 +120,17 @@
     margin-left: 75px;
     top: 50%;
     left: 50%;
+    @include Medium {
+      font-size: 80px;
+      width: inherit;
+      margin-left: 147px;
+    }
+    @include Large {
+      font-size: 3.9rem;
+    }
+    @include X-Large {
+      font-size: 4.4rem;
+    }
     &::before {
       content: "";
       position: absolute;

@@ -1,0 +1,113 @@
+.footer {
+  background-color: $blueColor;
+  position: relative;
+  margin-top: 300px;
+  padding-top: 0;
+  &__waves {
+    position: absolute;
+    left: 0;
+    bottom: 100%;
+    width: 100%;
+  }
+  &__flex {
+    display: flex;
+    gap: 100px;
+    @include Medium {
+      flex-direction: column;
+      gap: 35px;
+    }
+    @include Large {
+      gap: 20px;
+    }
+    @include X-Large {
+      gap: 60px;
+    }
+  }
+  &__content {
+    h5 {
+      color: #fff;
+      font-size: 20px;
+      font-family: $Roboto;
+      font-weight: 400;
+      line-height: normal;
+      letter-spacing: 1.04px;
+      text-transform: uppercase;
+      margin-top: 35px;
+      @include Large {
+        font-size: 14px;
+        line-height: 1.8;
+      }
+    }
+    h4 {
+      color: #fff;
+      font-family: $Poppins;
+      font-size: 24px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: normal;
+    }
+    p {
+      color: #fff;
+      font-family: $Roboto;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 400;
+    }
+  }
+  &__flex-information {
+    display: flex;
+    gap: 70px;
+    margin-top: 30px;
+    @include Medium {
+      gap: 80px;
+      margin-top: 0;
+    }
+    @include Large {
+      gap: 25px;
+    }
+    @include X-Large {
+      gap: 35px;
+    }
+    .footer__navigation {
+      h3 {
+        color: #fff;
+        font-family: $Oswald;
+        font-size: 24px;
+        font-weight: 400;
+        margin-bottom: 65px;
+      }
+      .footer__links {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        .footer__link {
+          color: #fff;
+          font-family: $Roboto;
+          font-size: 20px;
+          letter-spacing: 1.8;
+          text-transform: capitalize;
+        }
+      }
+    }
+    .footer__navigation:last-of-type {
+      p {
+        color: #fff;
+        font-family: $Roboto;
+        font-size: 20px;
+        font-style: normal;
+        letter-spacing: 1.8;
+        font-weight: 400;
+        line-height: 1.7;
+      }
+    }
+    .footer__icons {
+      h3 {
+        margin-bottom: 5px;
+      }
+      .social__links {
+        display: flex;
+        gap: 20px;
+      }
+    }
+  }
+}

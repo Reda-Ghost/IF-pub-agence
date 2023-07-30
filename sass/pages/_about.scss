@@ -9,18 +9,55 @@
     display: flex;
     align-items: center;
     column-gap: 25px;
+    @include Medium {
+      flex-direction: column;
+      margin-top: 60px;
+    }
+    @include Large {
+      flex-direction: column;
+      margin-top: 65px;
+    }
     .about__img {
+      @include X-Large {
+        width: 620px;
+      }
     }
     .about__content {
       margin-top: 65px;
+      @include Medium {
+        text-align: center;
+        margin-top: 50px;
+      }
+      @include Large {
+        margin-top: 45px;
+        text-align: center;
+      }
       &-sm_title {
         text-align: initial;
+        @include Medium {
+          text-align: center;
+        }
+        @include Large {
+          text-align: center;
+        }
+        @include X-Large {
+          font-size: 18px;
+        }
       }
       &-title {
         text-align: initial;
         font-size: 2.1875rem; //35px
         letter-spacing: 2.275px;
         margin-bottom: 20px;
+        @include Medium {
+          text-align: center;
+        }
+        @include Large {
+          text-align: center;
+        }
+        @include X-Large {
+          font-size: 29px;
+        }
         & + p {
           font-family: $Oswald;
           font-size: 1, 625rem; //26px
@@ -35,6 +72,9 @@
             letter-spacing: 0.3px;
             text-transform: uppercase;
             margin-bottom: 25px;
+            @include X-Large {
+              font-size: 18px;
+            }
           }
         }
         &:last-of-type {
@@ -59,6 +99,16 @@
         width: 250px;
         position: relative;
         transition: 150ms linear;
+        @include Medium {
+          margin-inline: auto;
+        }
+        @include Large {
+          margin-inline: auto;
+        }
+        @include X-Large {
+          width: fit-content;
+          padding-inline: 30px;
+        }
         &:hover {
           background-color: $blueColor;
         }

@@ -1,6 +1,7 @@
 .works {
   background-image: url(../img/works/works_img.png);
   background-size: cover;
+  background-attachment: fixed;
   position: relative;
   &::after {
     content: "";
@@ -24,6 +25,21 @@
     display: flex;
     gap: 65px;
     margin-top: 75px;
+    @include Medium {
+      gap: 45px;
+      display: grid;
+      grid-template-columns: repeat(2, 266px);
+      justify-content: center;
+    }
+    @include Large {
+      gap: 45px;
+      display: grid;
+      grid-template-columns: repeat(2, 266px);
+      justify-content: center;
+    }
+    @include X-Large {
+      gap: 25px;
+    }
     .work {
       background-color: white;
       width: 266px;

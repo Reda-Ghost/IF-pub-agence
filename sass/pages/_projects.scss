@@ -1,4 +1,14 @@
 .projects {
+  .container {
+    @include Medium {
+      width: auto;
+      padding-inline: 5px;
+    }
+    @include Large {
+      width: auto;
+      padding-inline: 30px;
+    }
+  }
   .projects__grid {
     margin-top: 75px;
     display: grid;
