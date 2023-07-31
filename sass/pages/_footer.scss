@@ -3,6 +3,12 @@
   position: relative;
   margin-top: 300px;
   padding-top: 0;
+  @include Extra-Small {
+    margin-top: 100px;
+  }
+  @include Small {
+    margin-top: 150px;
+  }
   &__waves {
     position: absolute;
     left: 0;
@@ -12,6 +18,14 @@
   &__flex {
     display: flex;
     gap: 100px;
+    @include Extra-Small {
+      flex-direction: column;
+      gap: 35px;
+    }
+    @include Small {
+      flex-direction: column;
+      gap: 35px;
+    }
     @include Medium {
       flex-direction: column;
       gap: 35px;
@@ -58,6 +72,16 @@
     display: flex;
     gap: 70px;
     margin-top: 30px;
+    @include Extra-Small {
+      flex-wrap: wrap;
+      gap: 35px;
+    }
+    @include Small {
+      flex-wrap: wrap;
+      gap: 35px;
+      justify-content: space-between;
+      width: 400px;
+    }
     @include Medium {
       gap: 80px;
       margin-top: 0;
@@ -75,6 +99,12 @@
         font-size: 24px;
         font-weight: 400;
         margin-bottom: 65px;
+        @include Extra-Small {
+          margin-bottom: 45px;
+        }
+        @include Small {
+          margin-bottom: 35px;
+        }
       }
       .footer__links {
         display: flex;

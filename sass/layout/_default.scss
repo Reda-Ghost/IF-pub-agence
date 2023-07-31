@@ -26,6 +26,12 @@ a {
   text-transform: uppercase;
   text-align: center;
   margin-block: 0;
+  @include Extra-Small {
+    font-size: 16px;
+  }
+  @include Small {
+    font-size: 16px;
+  }
   @include Medium {
     font-size: 18px;
   }
@@ -40,6 +46,12 @@ a {
   letter-spacing: 2.73px;
   text-transform: uppercase;
   margin-top: 10px;
+  @include Extra-Small {
+    font-size: 32px;
+  }
+  @include Small {
+    font-size: 32px;
+  }
   @include Medium {
     font-size: 35px;
   }

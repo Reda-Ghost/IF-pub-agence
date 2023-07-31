@@ -1,5 +1,13 @@
 .projects {
   .container {
+    @include Extra-Small {
+      width: auto;
+      padding-inline: 8px;
+    }
+    @include Small {
+      width: auto;
+      padding-inline: 35px;
+    }
     @include Medium {
       width: auto;
       padding-inline: 5px;
@@ -15,6 +23,14 @@
     grid-template-columns: 1fr 1fr;
     grid-template-rows: max-content;
     gap: 5px;
+    @include Extra-Small {
+      grid-template-columns: 1fr;
+      gap: 20px;
+    }
+    @include Small {
+      grid-template-columns: auto;
+      gap: 15px;
+    }
     .project {
       position: relative;
       background-size: cover;
@@ -54,6 +70,12 @@
         background-image: url(../img/projects/projectSix.png);
         height: 730px;
         margin-top: -255px;
+        @include Extra-Small {
+          margin-top: 0;
+        }
+        @include Small {
+          margin-top: 0;
+        }
       }
       &:nth-of-type(2) {
         background-image: url(../img/projects/projectTwo.png);
@@ -63,6 +85,12 @@
         background-image: url(../img/projects/projectThree.png);
         height: 700px;
         margin-top: -230px;
+        @include Extra-Small {
+          margin-top: 0;
+        }
+        @include Small {
+          margin-top: 0;
+        }
       }
       &:nth-of-type(4) {
         background-image: url(../img/projects/projectFour.png);

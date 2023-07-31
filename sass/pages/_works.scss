@@ -3,6 +3,9 @@
   background-size: cover;
   background-attachment: fixed;
   position: relative;
+  @include Small {
+    background-position: center center;
+  }
   &::after {
     content: "";
     position: absolute;
@@ -25,6 +28,16 @@
     display: flex;
     gap: 65px;
     margin-top: 75px;
+    @include Extra-Small {
+      flex-direction: column;
+      align-items: center;
+      gap: 35px;
+    }
+    @include Small {
+      flex-direction: column;
+      align-items: center;
+      gap: 45px;
+    }
     @include Medium {
       gap: 45px;
       display: grid;
