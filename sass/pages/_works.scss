@@ -28,6 +28,10 @@
     display: flex;
     gap: 65px;
     margin-top: 75px;
+    @include Mobile {
+      gap: 25px;
+      margin-top: 35px;
+    }
     @include Extra-Small {
       flex-direction: column;
       align-items: center;

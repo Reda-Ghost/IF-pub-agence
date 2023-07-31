@@ -1,5 +1,5 @@
 .header {
-  position: absolute;
+  position: fixed;
   z-index: 99999;
   width: 100%;
   left: 0;
@@ -7,7 +7,14 @@
   height: $navHeight;
   display: flex;
   align-items: center;
+  background-color: white;
   box-shadow: 0px 0px 10px 0px rgba(166, 209, 237, 0.8);
+  @include Mobile {
+    height: 80px;
+  }
+  @include Extra-Small {
+    height: 100px;
+  }
   .navbar {
     display: flex;
     align-items: center;
@@ -24,8 +31,11 @@
     }
     &__logo {
       width: 110px;
+      @include Mobile {
+        height: 60px;
+      }
       @include Extra-Small {
-        width: 100px;
+        width: 75px;
       }
       @include Small {
         width: 100px;
@@ -79,8 +89,12 @@
       width: 40px;
       cursor: pointer;
       display: none;
+      @include Mobile {
+        width: 30px;
+      }
       @include Extra-Small {
         display: block;
+        width: 35px;
       }
       @include Small {
         display: block;
@@ -103,6 +117,9 @@
   padding-top: $navHeight;
   position: relative;
   overflow: hidden;
+  @include Mobile {
+    padding-top: 80px;
+  }
   &::before,
   &::after {
     position: absolute;
@@ -159,6 +176,9 @@
     margin-left: 75px;
     top: 50%;
     left: 50%;
+    @include Mobile {
+      font-size: 38px !important;
+    }
     @include Extra-Small {
       width: inherit;
       font-size: 48px;

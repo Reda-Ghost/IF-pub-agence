@@ -132,14 +132,24 @@
     &:hover {
       background-color: $redColor;
     }
+    @include Mobile {
+      padding: 12px 35px;
+      font-size: 16px;
+    }
   }
 }
 
 .circle_5 {
   left: 5%;
+  @include Extra-Small {
+    display: none;
+  }
 }
 .circle_1 {
   top: initial;
   bottom: 3%;
   left: 20%;
+  @include Extra-Small {
+    display: none;
+  }
 }

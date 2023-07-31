@@ -26,6 +26,8 @@
     .about__img {
       @include Extra-Small {
         width: 100%;
+        position: relative;
+        z-index: 2;
       }
       @include Small {
         width: 100%;
@@ -76,6 +78,8 @@
         font-size: 2.1875rem; //35px
         letter-spacing: 2.275px;
         margin-bottom: 20px;
+        position: relative;
+        z-index: 2;
         @include Extra-Small {
           text-align: center;
         }
@@ -132,6 +136,10 @@
         width: 250px;
         position: relative;
         transition: 150ms linear;
+        @include Mobile {
+          padding: 12px 35px;
+          font-size: 16px;
+        }
         @include Extra-Small {
           margin-inline: auto;
         }
@@ -154,11 +162,19 @@
       }
     }
   }
+  
   .circle_1 {
     left: 80%;
     top: 300px;
+    @include Extra-Small {
+      display: none;
+    }
   }
+  
   .circle_5 {
     left: 3%;
+    @include Extra-Small {
+      
+    }
   }
 }

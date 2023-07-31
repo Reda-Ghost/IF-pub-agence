@@ -48,6 +48,12 @@
         align-items: center;
         padding-inline: 50px;
         transition: 250ms ease-in-out;
+        @include Mobile {
+          padding-inline: 20px !important;
+        }
+        @include Extra-Small {
+          padding-inline: 20px;
+        }
         h4 {
           color: #fff;
           font-family: $Roboto;
@@ -57,6 +63,12 @@
           text-transform: uppercase;
           text-align: center;
           line-height: normal;
+          @include Mobile {
+            font-size: 28px !important;
+          }
+          @include Extra-Small {
+            font-size: 34px;
+          }
         }
       }
       &:hover .project__overlay {
@@ -65,13 +77,23 @@
       &:first-of-type {
         background-image: url(../img/projects/projectOne.png);
         height: 490px;
+        @include Mobile {
+          height: 250px !important;
+        }
+        @include Extra-Small {
+          height: 350px;
+        }
       }
       &:last-of-type {
         background-image: url(../img/projects/projectSix.png);
         height: 730px;
         margin-top: -255px;
+        @include Mobile {
+          height: 420px !important;
+        }
         @include Extra-Small {
           margin-top: 0;
+          height: 520px;
         }
         @include Small {
           margin-top: 0;
@@ -80,13 +102,23 @@
       &:nth-of-type(2) {
         background-image: url(../img/projects/projectTwo.png);
         height: 720px;
+        @include Mobile {
+          height: 420px !important;
+        }
+        @include Extra-Small {
+          height: 450px;
+        }
       }
       &:nth-of-type(3) {
         background-image: url(../img/projects/projectThree.png);
         height: 700px;
         margin-top: -230px;
+        @include Mobile {
+          height: 360px !important;
+        }
         @include Extra-Small {
           margin-top: 0;
+          height: 475px;
         }
         @include Small {
           margin-top: 0;
@@ -95,10 +127,22 @@
       &:nth-of-type(4) {
         background-image: url(../img/projects/projectFour.png);
         height: 215px;
+        @include Mobile {
+          height: 150px !important;
+        }
+        @include Extra-Small {
+          height: 160px;
+        }
       }
       &:nth-of-type(5) {
         background-image: url(../img/projects/projectFive.png);
         height: 475px;
+        @include Mobile {
+          height: 275px !important;
+        }
+        @include Extra-Small {
+          height: 345px;
+        }
       }
     }
   }
